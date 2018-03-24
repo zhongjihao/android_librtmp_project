@@ -8,9 +8,9 @@
 #ifndef CRTMP_WRAP_H
 #define CRTMP_WRAP_H
 
-#include "../rtmpvedio/librtmpdump/librtmp/rtmp_sys.h"
-#include "../rtmpvedio/librtmpdump/librtmp/log.h"
-#include "../rtmpvedio/librtmpdump/librtmp/rtmp.h"
+#include "../rtmpvedio/rtmpdump/librtmp/rtmp_sys.h"
+#include "../rtmpvedio/rtmpdump/librtmp/log.h"
+#include "../rtmpvedio/rtmpdump/librtmp/rtmp.h"
 
 //定义包头长度，RTMP_MAX_HEADER_SIZE=18
 #define RTMP_HEAD_SIZE   (sizeof(RTMPPacket) + RTMP_MAX_HEADER_SIZE)
