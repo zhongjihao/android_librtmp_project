@@ -48,7 +48,6 @@ public class MediaPublisher {
         }
         mVideoGather = VideoGather.getInstance();
         mAudioGather = AudioGather.getInstance();
-        mAudioGather.prepareAudioRecord();
         mAVEncoder = AVEncoder.newInstance();
         mRtmpPublisher = RtmpPublisher.newInstance();
         setListener();
@@ -90,6 +89,7 @@ public class MediaPublisher {
      * 开始音频采集
      */
     public void startAudioGather() {
+        mAudioGather.prepareAudioRecord();
         mAudioGather.startRecord();
     }
 
