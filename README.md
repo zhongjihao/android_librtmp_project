@@ -29,3 +29,13 @@ Android平台上使用Camera和AudioRecord采集音视频数据，通过MediaCod
    7 在srs网页客户端rtmp地址栏中输入rtmp://192.168.1.101:1935/zhongjihao/myh264 \
    8 最后用AndroidStudio编译运行apk，点击开始即可在srs网页客户端上看到android客户端推送过来的视频 \
    9 bash scripts/stop.sh 结束srs服务器运行
+   
+推送端: 三星C9上运行截图如下
+![afd](Screenshot_20180503-215842.png)
+
+接收端: Srs流媒体客户端播放截图如下
+![fadf](srs_client_player.png)
+
+
+接收端: Vlc客户端播放截图如下
+![fadf](vlc_player.png)
