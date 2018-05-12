@@ -64,6 +64,7 @@ public class MediaPublisher {
                     }
                 }
                 mRunnables.clear();
+                Log.d(TAG, "=====zhongjihao====Rtmp发布线程退出...");
             }
         };
 
@@ -104,12 +105,11 @@ public class MediaPublisher {
      * 释放
      */
     public void release() {
-        mAVEncoder.release();
         mAudioGather.release();
         loop = false;
         if (workThread != null) {
             workThread.interrupt();
-            workThread = null;
+           // workThread = null;
         }
     }
 
