@@ -3,8 +3,12 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
+        def date = new Date()
+        def formattedDate = date.format('yyMMddHHmm')
         applicationId "com.android.rtmpvideo"
-        minSdkVersion 17
+        versionCode 100
+        setProperty("archivesBaseName", "v2.3.$versionCode.$formattedDate")
+        minSdkVersion 18
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -40,6 +44,14 @@ android {
 //            }
         }
     }
+
+    flavorDimensions "default"
+    productFlavors {
+        ANDROID_RTMP_APP {
+            versionName "$archivesBaseName"+"_$name"
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false

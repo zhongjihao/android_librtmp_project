@@ -85,6 +85,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         permissions, TARGET_PERMISSION_REQUEST);
             }
         }
+        YuvEngineWrap.newInstance().startYuvEngine();
     }
 
     private void codecToggle() {
@@ -125,6 +126,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             mediaPublisher.release();
         mediaPublisher = null;
         VideoGather.getInstance().doStopCamera();
+        YuvEngineWrap.newInstance().stopYuvEngine();
     }
 
     @Override

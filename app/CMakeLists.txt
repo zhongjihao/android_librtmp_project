@@ -13,13 +13,14 @@ set(rtmp_dir ${CMAKE_SOURCE_DIR}/src/main/libs/)
 # Gradle automatically packages shared libraries with your APK.
 
 add_library( # Sets the name of the library.
-             yuv420pUtil
+             yuvengine
 
              # Sets the library as a shared library.
              SHARED
 
              # Provides a relative path to your source file(s).
-             src/main/jni/yuv420p/com_android_rtmpvideo_Yuv420POperate.cpp )
+             src/main/jni/com_android_rtmpvideo_YuvOperateJni.cpp
+             src/main/jni/yuvengine/yuvengine.cpp)
 
 add_library( # Sets the name of the library.
              rtmpJni
@@ -56,7 +57,7 @@ set_target_properties(rtmp PROPERTIES IMPORTED_LOCATION
 # build script, prebuilt third-party libraries, or system libraries.
 
 target_link_libraries( # Specifies the target library.
-                       yuv420pUtil
+                       yuvengine
 
                        # Links the target library to the log library
                        # included in the NDK.

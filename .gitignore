@@ -1,9 +1,9 @@
-*.iml
+android_librtmp_project.iml
 .gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
-.DS_Store
-/build
-/captures
-.externalNativeBuild
+.idea/
+build
+app/app.iml
+app/build
+app/.externalNativeBuild
+app/proguard-rules.pro
+
