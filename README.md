@@ -17,6 +17,7 @@ Android平台上使用Camera和AudioRecord采集音视频数据，通过MediaCod
    2 cd jni/rtmpvedio/polarssl-1.2.14/ \
      执行armeabi_or_v7a_build.sh脚本 \
    3 cd jni/ \
+     执行ndk-build clean \
      执行ndk-build
 
 运行步骤：\

@@ -3,7 +3,7 @@ package com.android.rtmpvideo;
 import android.util.Log;
 
 /**
- * Created by apadmin on 18-2-7.
+ * Created by zhongjihao100@163.com on 18-2-7.
  */
 
 public class RtmpJni {
