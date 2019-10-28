@@ -1,4 +1,4 @@
-Android平台上使用Camera和AudioRecord采集音视频数据，通过MediaCodec对音视频实施硬编码，通过Rtmp协议发送到流媒体服务器的直播方案 
+Android平台上使用Camera和AudioRecord采集音视频数据，通过MediaCodec对音视频实施硬编码，移植rtmpdump开源库通过Rtmp协议将音视频数据发送到流媒体服务器的直播方案 
 
 使用到的api \
     音视频采集用到的api有：Camera、AudioRecord \
