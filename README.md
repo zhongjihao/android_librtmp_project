@@ -1,5 +1,5 @@
 如果您觉得该项目对您有用，请扫描以下二维码打赏1元，多多支持
-![fadf](vlc_player.png)
+![fadf](webwxgetmsgimg.jpeg)
 
 
 Android平台上使用Camera和AudioRecord采集音视频数据，通过MediaCodec对音视频实施硬编码，移植rtmpdump开源库通过Rtmp协议将音视频数据发送到流媒体服务器的直播方案 
